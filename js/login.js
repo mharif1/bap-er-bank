@@ -15,10 +15,10 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     // DANGER : DO NOT VERIFY email password on the client site
     // step 4 : verify email and password 
     if(email === 'md5667676@gmail.com' && password === '@arif644332'){
-        console.log('valid user')
+        window.location.href= 'bank.html';
     }
     else{
-        console.log('invalid user')
+        alert('kire password bhuila gesos. invalid user')
     }
 
     

@@ -16,10 +16,12 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     const currentDepositTotal = previousDepositTotal + newDepositAmount;
     depositTotalElement.innerText = currentDepositTotal;
 
-    // step-5 :get ballance current total
-    
-
-
+    // step-5 :get balance current total
+    const balanceTotalElement = document.getElementById('balance-total');
+    const previousBalanceTotalString = balanceTotalElement.innerText;
+    const previousBalanceTotal = parseFloat(previousBalanceTotalString);
+    const currentBalanceTotal = previousBalanceTotal + newDepositAmount;
+    balanceTotalElement.innerText = currentBalanceTotal
     // step 7 : clear the deposit field 
     depositFileld.value = '';
 })
